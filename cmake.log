@@ -1,0 +1,78 @@
+compiler identification is GNU 7.1.1
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- checking for C compiler flag: -Wall
+-- checking for C compiler flag: -Wextra
+-- checking for C compiler flag: -Wpointer-arith
+-- checking for C compiler flag: -Werror=implicit-function-declaration
+-- checking for C compiler flag: -Wformat=0
+-- checking for C compiler flag: -Wno-misleading-indentation
+-- checking for C compiler flag: -fno-strict-aliasing
+-- checking for C compiler flag: -fPIC
+-- checking for C compiler flag: -flto
+-- checking for C compiler flag: -fsanitize=address
+-- checking for C compiler flag: -fno-omit-frame-pointer
+-- checking for C compiler flag: -DAUDIO_FILTERING
+-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+-- Found DBUS: /usr/include/dbus-1.0;/usr/lib/dbus-1.0/include  
+-- checking for C compiler flag: -DHAVE_DBUS=1
+-- Found Freetype: /usr/lib/libfreetype.so (found version "2.8.0") 
+Found Freetype version 2.8.0
+Freetype include: /usr/include/freetype2
+Freetype library: /usr/lib/libfreetype.so
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Found X11: /usr/lib/libX11.so
+X include:         /usr/include
+X library:         /usr/lib/libSM.so;/usr/lib/libICE.so;/usr/lib/libX11.so;/usr/lib/libXext.so
+Xrender include:   /usr/include
+Xrender library:   /usr/lib/libXrender.so
+DBus include:  /usr/include/dbus-1.0;/usr/lib/dbus-1.0/include
+DBus library:  /usr/lib/libdbus-1.so
+-- Checking for one of the modules 'check'
+CMake Error at /usr/share/cmake-3.8/Modules/FindPkgConfig.cmake:641 (message):
+  None of the required 'check' found
+Call Stack (most recent call first):
+  cmake/FindCheck.cmake:27 (PKG_SEARCH_MODULE)
+  tests/CMakeLists.txt:6 (find_package)
+
+
+Build options:
+- CMake Module Path:        /home/dan/devel/uTox/cmake/
+----------------------------------
+- Add ASAN:                ON
+- Error on Warning:        OFF
+- Filter Audio:            ON
+- Auto Updater:            OFF
+- uTox Static:             OFF
+- Toxcore Static:          OFF
+-- Platform Options --------------
+- Windows Legacy:          
+- Enable DBus:             ON
+- Enable Tests             ON
+* CMAKE SYSTEM is 'Linux'
+* C Compiler is '/usr/bin/cc' with the following flags:
+* C flags for Debug:       -g
+* C flags for Release:     -O3 -DNDEBUG -Os
+* C flags for all types:     -Wall -Wextra -Wpointer-arith -Werror=implicit-function-declaration -Wformat=0 -Wno-misleading-indentation -fno-strict-aliasing -fPIC -flto -fsanitize=address -fno-omit-frame-pointer -DAUDIO_FILTERING
+
+  TIP: You may want to set the env variable  ASAN_SYMBOLIZER_PATH=/usr/bin/llvm-symbolizer  for ASAN to show nicer stack traces.
+       See <http://clang.llvm.org/docs/AddressSanitizer.html#symbolizing-the-reports> for more details.
+
+-- Configuring incomplete, errors occurred!
+See also "/home/dan/devel/uTox/build/CMakeFiles/CMakeOutput.log".
+
