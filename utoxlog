@@ -1,0 +1,35 @@
+XLIB TRAY:    Tray no workie, that not gud!
+XLib Tray:    Incoming tray window event (28)
+XLib tray:    Reached end of function, this is bad juju!
+Lost packet
+Lost packet
+Lost packet
+Lost packet
+Lost packet
+Lost packet
+Lost packet
+Lost packet
+Lost packet
+Lost packet
+Lost packet
+Lost packet
+Lost packet
+Lost packet
+Lost packet
+Lost packet
+Lost packet
+Lost packet
+Lost packet
+Lost packet
+Lost packet
+Lost packet
+Lost packet
+Lost packet
+Lost packet
+Lost packet
+Lost packet
+Lost packet
+Lost packet
+uToxAV:       Change state with an error, this should never happen. Please send bug report!
+free(): invalid next size (normal)
+zsh: abort (core dumped)  utox
