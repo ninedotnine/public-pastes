@@ -1,0 +1,68 @@
+GNU gdb (GDB) 8.1.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-pc-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./utox...done.
+(gdb) run
+Starting program: /home/dan/tmp/uTox/tmp_git/uTox/build/utox 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/usr/lib/libthread_db.so.1".
+[New Thread 0x7fffef191700 (LWP 29873)]
+[New Thread 0x7fffef090700 (LWP 29874)]
+[Thread 0x7fffef191700 (LWP 29873) exited]
+[New Thread 0x7fffe8d8f700 (LWP 29875)]
+XLib Tray:    Incoming tray window event (28)
+XLib tray:    Reached end of function, this is bad juju!
+[New Thread 0x7fffe80ac700 (LWP 29876)]
+[New Thread 0x7fffe7fab700 (LWP 29877)]
+[New Thread 0x7fffe789f700 (LWP 29878)]
+[Thread 0x7fffe789f700 (LWP 29878) exited]
+[New Thread 0x7fffe789f700 (LWP 29880)]
+[Thread 0x7fffe789f700 (LWP 29880) exited]
+[New Thread 0x7fffe789f700 (LWP 29881)]
+[Thread 0x7fffe789f700 (LWP 29881) exited]
+[New Thread 0x7fffe5275700 (LWP 29883)]
+[Thread 0x7fffe5275700 (LWP 29883) exited]
+[New Thread 0x7fffe5174700 (LWP 29884)]
+[Thread 0x7fffe5174700 (LWP 29884) exited]
+[New Thread 0x7fffe789f700 (LWP 29885)]
+
+Thread 5 "utox" received signal SIGSEGV, Segmentation fault.
+[Switching to Thread 0x7fffe80ac700 (LWP 29876)]
+0x00007ffff71b7d50 in count_chatlist () from /usr/lib/libtoxcore.so.2
+(gdb) bt full
+#0  0x00007ffff71b7d50 in count_chatlist () at /usr/lib/libtoxcore.so.2
+#1  0x00007ffff71ba504 in tox_conference_get_chatlist_size () at /usr/lib/libtoxcore.so.2
+#2  0x00005555557601c7 in utox_audio_thread (args=0x610000008440) at /home/dan/tmp/uTox/tmp_git/uTox/src/av/audio.c:891
+        active_call_count = 0
+        tox = 0x61d00003fc80
+        num_chats = 32767
+        voice = true
+        samples = 2420
+        frame = true
+        sleep = false
+        close_device_time = 0
+        av = 0x610000008440
+        perframe = 960
+        buf = 0x7fffe80aafc0 "}"
+        preview_buffer = 0x62e00003c400
+        preview_buffer_index = 960
+        preview_on = true
+#3  0x00007ffff6984a8d in start_thread () at /usr/lib/libpthread.so.0
+#4  0x00007ffff4a66823 in clone () at /usr/lib/libc.so.6
+(gdb) quit
+A debugging session is active.
+
+	Inferior 1 [process 29869] will be killed.
+
+Quit anyway? (y or n) y
