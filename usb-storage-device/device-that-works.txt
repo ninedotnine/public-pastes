@@ -1,0 +1,17 @@
+[2434061.064645] usb 1-7: new high-speed USB device number 99 using xhci_hcd
+[2434061.223196] usb 1-7: New USB device found, idVendor=18a5, idProduct=0302, bcdDevice= 1.00
+[2434061.223203] usb 1-7: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[2434061.223207] usb 1-7: Product: STORE N GO
+[2434061.223210] usb 1-7: Manufacturer: Verbatim
+[2434061.223213] usb 1-7: SerialNumber: 070A84D452AA7075
+[2434061.225077] usb-storage 1-7:1.0: USB Mass Storage device detected
+[2434061.225608] scsi host3: usb-storage 1-7:1.0
+[2434063.855138] scsi 3:0:0:0: Direct-Access     Verbatim STORE N GO       PMAP PQ: 0 ANSI: 6
+[2434063.855931] sd 3:0:0:0: Attached scsi generic sg2 type 0
+[2434063.859701] sd 3:0:0:0: [sdc] 30253056 512-byte logical blocks: (15.5 GB/14.4 GiB)
+[2434063.862019] sd 3:0:0:0: [sdc] Write Protect is off
+[2434063.862029] sd 3:0:0:0: [sdc] Mode Sense: 23 00 00 00
+[2434063.863646] sd 3:0:0:0: [sdc] No Caching mode page found
+[2434063.863655] sd 3:0:0:0: [sdc] Assuming drive cache: write through
+[2434063.912201]  sdc: sdc1
+[2434063.920063] sd 3:0:0:0: [sdc] Attached SCSI removable disk

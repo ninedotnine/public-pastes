@@ -1,0 +1,8 @@
+» lsblk -f
+NAME   FSTYPE FSVER LABEL UUID                                 FSAVAIL FSUSE% MOUNTPOINT
+sda                                                                           
+└─sda1 ext4   1.0         9bc7d7a5-af8e-4497-8b45-eefb5b0a0ff4  299,8G    62% /media
+sdb                                                                           
+├─sdb1 vfat   FAT32       B586-BE6F                             548,8M     0% /boot/efi
+├─sdb2 ext4   1.0         63433477-2d02-45cb-92a0-0637033c763a    2,5G    79% /
+└─sdb3 ext4   1.0         c83b2d07-eb58-4fce-b1ab-d6f98b68f0d3   36,3G    56% /home

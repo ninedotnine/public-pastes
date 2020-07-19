@@ -1,0 +1,6 @@
+» lsusb  
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 001 Device 102: ID 090c:3000 Silicon Motion, Inc. - Taiwan (formerly Feiya Technology Corp.) SM3255AA MEMORY BAR 
+Bus 001 Device 003: ID 8087:0a2b Intel Corp. 
+Bus 001 Device 002: ID 04f2:b649 Chicony Electronics Co., Ltd Chicony USB2.0 Camera
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
