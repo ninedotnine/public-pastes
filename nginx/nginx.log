@@ -40,6 +40,8 @@ http {
     server {
         server_name  danso.ca www.danso.ca;
 #         listen 80 default_server;
+        listen       80 default_server;
+        listen       [::] default_server;
 
         #charset koi8-r;
         charset UTF-8;
@@ -91,8 +93,9 @@ http {
         return 301 https://$host$request_uri;
     } # managed by Certbot
 
-        listen       80 default_server;
-        server_name  danso.ca www.danso.ca;
+#         listen       80;
+#         listen       [::];
+#         server_name  danso.ca www.danso.ca;
     return 404; # managed by Certbot
     }
 
