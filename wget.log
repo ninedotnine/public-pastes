@@ -1,0 +1,17 @@
+--2022-12-27 22:17:39--  http://danso.ca/index.html
+Resolving danso.ca (danso.ca)... 2600:3c03::f03c:91ff:fe05:6954, 45.33.68.83
+Connecting to danso.ca (danso.ca)|2600:3c03::f03c:91ff:fe05:6954|:80... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://mtl.rocks/index.html [following]
+--2022-12-27 22:17:40--  https://mtl.rocks/index.html
+Loaded CA certificate '/etc/ssl/certs/ca-certificates.crt'
+Resolving mtl.rocks (mtl.rocks)... 2600:3c03::f03c:91ff:fe05:6954, 45.33.68.83
+Connecting to mtl.rocks (mtl.rocks)|2600:3c03::f03c:91ff:fe05:6954|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 570 [text/html]
+Saving to: 'index.html'
+
+     0K                                                       100% 16.0M=0s
+
+2022-12-27 22:17:40 (16.0 MB/s) - 'index.html' saved [570/570]
+
